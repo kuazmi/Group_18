@@ -1,0 +1,81 @@
+---
+title: "MTHM506 Group Project - Quantifying spatio-temporal risk from TB in Brazil"
+author: "MTHM506 Group 18"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo=FALSE, results='hide', message=FALSE, warning=FALSE,fig.show='hide'}
+# this section will not be showing in the rendered pdf
+# Loading necessary package
+library("tidyverse")
+library(tidyverse)
+library(ggmap)
+library(RColorBrewer)
+
+# for maps
+library(maps) 
+#install.packages("rgdal")
+library(rgdal)
+#install.packages("maptools")
+library(maptools)
+
+load("/Users/kumi/Documents/Education/MSc Applied Data Science and Statistics/TERM 2/MTHM506 (2022) Statistical Data Modelling/group project/datasets_project.RData")
+
+```
+
+# Part 1.0 - Introduction & Initial Data Analysis
+
+The incubation time for tuberculosis is notoriously extended, and the disease strikes teenagers and young adults at an alarmingly high rate. It is exceedingly difficult to eradicate the threat of TB since the virus that causes this disease can be dormant in a person for up to two months after being infected. Hence, it is necessary for Brazil, a developing country with a large population, to investigate the incidence rate of tuberculosis (TB) by looking into the socio-economic variables and analysing whether or not these variables have any major significant effect towards the rate at which the disease is spreading within the 557 administrative microregions. In this report, we will use the GAM framework to investigate and quantify the TB risk across Brazil over the course of three years, between 2012 until 2014. Risk is defined here as the rate of TB cases per unit population, and our ultimate goal is to assist the Brazilian health authorities in recommending hospital resources be allocated to the "red-zone" area of the country where there is a high risk of TB (based on our GAM model framework and the systematic risk analysis).
+
+# Part 2.0  - Results & Discussions
+
+## 2.1 Model Selection
+
+Initially we were given 8 socio-economic co-variates to investigate whether these variable are significantly affecting the rate of TB per unit population. Upon comparing and performing multiple tests on multiple models we have selected our best-fit model as below:
+
+$$$$
+
+
+## 2.2 Spatial, Temporal & Spatio-temporal Analysis & Recommendations
+
+# Part 3 - Conclusions
+
+\newpage
+# References / Bibliography
+
+
+\newpage
+# Appendix
+
+All of our code with comments included in this section: 
+
+```{r eval= F}
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
